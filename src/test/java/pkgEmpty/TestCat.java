@@ -39,13 +39,13 @@ public class TestCat {
 
 
 	@Test(expected = BookExcep.class) // exception
-	public void testgetbook() throws BookExcep {
+	public void TestGetBook() throws BookExcep {
 		Catalog cat = ReadXMLFile();
 		cat.GetBook("bk00");
 	}
 
 	@Test
-	public void testaddbook() throws BookExcep {
+	public void TestAddBook() throws BookExcep {
 		Catalog cat = ReadXMLFile();
 		Book b = new Book("bk113");
 		cat.AddBook("bk113");
